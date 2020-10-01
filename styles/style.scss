@@ -1,0 +1,338 @@
+// ########## Default ##########
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  background: hsl(217, 28%, 15%);
+  color: white;
+}
+
+// ########## Mobile view ##########
+.wrapper {
+  padding: 40px 20px 350px;
+
+  h2, h3 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 50px;
+
+    img {
+      width: 100px;
+    }
+
+    ul {
+      list-style: none;
+      justify-self: end;
+      align-self: center;
+      
+      li {
+        display: inline;
+
+        &:nth-of-type(2) {
+          margin: 0 10px;
+        }
+
+        a {
+          color: rgb(228, 226, 226);
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
+  } // End of nav
+
+  main {
+    position: relative;
+
+    header {
+      text-align: center;
+      margin-bottom: 150px;
+      background: url(../images/bg-curvy-mobile.svg) no-repeat bottom;
+      background-size: 500px 350px;
+
+      img {
+        width: 80%;
+      }
+
+      h2 {
+        margin: 20px 0;
+        line-height: 1.5;
+      }
+
+      p {
+        line-height: 1.5;
+        margin: 0 25px;
+      }
+
+      button {
+        background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        color: white;
+        font-weight: bold;
+        width: 200px;
+        padding: 12px 0;
+        border: none;
+        border-radius: 50px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      
+    } // End of header
+
+    .files {
+      text-align: center;
+      margin-bottom: 150px;
+
+      img {
+        width: 50px;
+      }
+
+      h3 {
+        margin: 30px 0 15px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .file {
+        margin: 0 5px 70px;
+
+        &:nth-of-type(4){
+          margin-bottom: 0;
+        }
+
+      }
+
+    } // End of .files
+
+    .productivity {
+      margin-bottom: 150px;
+
+      .image {
+
+        img {
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+        }
+
+      }
+
+      .write-up {
+
+        h3 {
+          margin: 50px 0 20px;
+        }
+  
+        p {
+          line-height: 1.5;
+  
+          &:nth-of-type(2) {
+            margin: 20px 0;
+          }
+  
+        }
+  
+        a {
+          color: hsl(176, 68%, 64%);
+        }
+
+      }
+
+    } // End of .productivity
+
+    .testimony {
+      margin: 0 20px;
+
+      .testimonial {
+        background: hsl(219, 30%, 18%);
+        padding: 30px 20px 20px;
+        border: 1px solid hsl(219, 30%, 18%);
+        border-radius: 10px;
+
+        &:nth-of-type(2) {
+          margin: 20px 0;
+        }
+
+        p {
+          line-height: 1.5;
+          font-size: .8em;
+        }
+
+        .profile {
+          margin-top: 20px;
+          img {
+            width: 30px;
+            border-radius: 50%;
+          }
+
+          .person {
+            display: inline-block;
+            width: 150px;
+            margin-left: 5px;
+
+            p {
+              font-size: .7em;
+            }
+
+          }
+
+        }
+
+      }
+
+    } // End of .testimony
+
+    .sign-up {
+      text-align: center;
+      padding: 30px 20px;
+      background: hsl(218, 28%, 13%);
+      position: absolute;
+      bottom: -520px;
+      border-radius: 10px;
+
+      p {
+        margin: 20px 0 40px;
+      }
+
+      input, button {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 50px;
+      }
+
+      input {
+        color: rgb(165, 156, 156);
+      }
+
+      button {
+        background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        color: white;
+        font-weight: bold;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+    } // End of sign-up
+
+  } // End of main
+
+} // End of wrapper
+
+footer {
+  background: hsl(216, 53%, 9%);
+  padding: 250px 20px 0;
+
+  .logo {
+    margin: 0 0 30px 15px;
+
+    img {
+      width: 150px;
+    }
+
+  }
+
+  .location, .phone, .email {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+
+    p {
+      line-height: 1.5;
+    }
+   
+  }
+
+  .phone {
+    margin: 20px 0;
+  }
+
+  .contact {
+    margin-bottom: 60px;
+  }
+
+  .updates {
+
+    a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      margin: 20px 0;
+
+      &:nth-of-type(1) {
+        margin-top: 0;
+      }
+
+      &:nth-of-type(4) {
+        margin-bottom: 50px;
+      }
+
+      &:nth-of-type(7) {
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  .social {
+    text-align: center;
+    margin: 50px auto;
+
+    img {
+
+      &:nth-of-type(2) {
+        margin: 0 10px;
+      }
+
+    }
+
+  }
+
+  .profile {
+    font-size: .8em;
+    margin-bottom: 20px;
+    text-align: center;
+
+      #fspan {
+        padding-right: 10px;
+        border-right: 1px solid hsl(176, 68%, 64%);
+      }
+
+      #sspan {
+        padding-left: 10px;
+        border-left: 1px solid white;
+      }
+
+      a {
+        color: hsl(176, 68%, 64%);
+        text-decoration: underline;
+        text-decoration-color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+      }
+
+  }
+
+} // End of footer
+

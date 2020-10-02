@@ -13,6 +13,8 @@ body {
 
 .wrapper {
   padding: 40px 20px 350px;
+  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom;
+  background-size: 20000px 4200px;
 }
 
 .wrapper h2, .wrapper h3 {
@@ -64,8 +66,6 @@ body {
 .wrapper main header {
   text-align: center;
   margin-bottom: 150px;
-  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom;
-  background-size: 500px 350px;
 }
 
 .wrapper main header img {
@@ -102,6 +102,10 @@ body {
 
 .wrapper main .files img {
   width: 50px;
+}
+
+.wrapper main .files .two img {
+  width: 35px;
 }
 
 .wrapper main .files h3 {
@@ -148,6 +152,8 @@ body {
 
 .wrapper main .testimony {
   margin: 0 20px;
+  padding-top: 40px;
+  background: url(../images/bg-quotes.png) no-repeat;
 }
 
 .wrapper main .testimony .testimonial {
@@ -210,7 +216,7 @@ body {
 }
 
 .wrapper main .sign-up input {
-  color: #a59c9c;
+  color: #928b8b;
 }
 
 .wrapper main .sign-up button {
@@ -283,19 +289,19 @@ footer .social img:nth-of-type(2) {
 }
 
 footer .profile {
-  font-size: .8em;
+  font-size: .75em;
   margin-bottom: 20px;
   text-align: center;
 }
 
 footer .profile #fspan {
   padding-right: 10px;
-  border-right: 1px solid #65e2d9;
+  border-right: 2px solid #65e2d9;
 }
 
 footer .profile #sspan {
   padding-left: 10px;
-  border-left: 1px solid white;
+  border-left: 2px solid white;
 }
 
 footer .profile a {
@@ -307,5 +313,147 @@ footer .profile a {
 
 footer .profile a:hover {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 50px 100px 350px;
+    background: url(../images/bg-curvy-desktop.svg) no-repeat bottom center;
+    background-size: 10000px 2900px;
+  }
+  .wrapper p {
+    font-size: 1em;
+  }
+  .wrapper nav img {
+    width: auto;
+  }
+  .wrapper nav ul {
+    font-size: 1.3em;
+  }
+  .wrapper nav ul li:nth-of-type(2) {
+    margin: 0 20px;
+  }
+  .wrapper main header {
+    width: 50%;
+    margin: 0 auto 150px;
+  }
+  .wrapper main header img {
+    width: 100%;
+  }
+  .wrapper main header h2 {
+    font-size: 2em;
+  }
+  .wrapper main .files {
+    width: 75%;
+    margin: 0 auto 150px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .wrapper main .productivity {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .wrapper main .productivity .write-up {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 500px;
+  }
+  .wrapper main .productivity .write-up h3 {
+    font-size: 1.8em;
+  }
+  .wrapper main .testimony {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .wrapper main .testimony .testimonial:nth-of-type(2) {
+    margin: 0;
+  }
+  .wrapper main .testimony .testimonial p {
+    font-size: 1em;
+  }
+  .wrapper main .sign-up {
+    width: 70%;
+    bottom: -450px;
+    left: 13%;
+  }
+  .wrapper main .sign-up h3 {
+    font-size: 1.5em;
+  }
+  .wrapper main .sign-up p {
+    margin: 20px 40px;
+  }
+  .wrapper main .sign-up input {
+    width: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .wrapper main .sign-up button {
+    width: 22%;
+    display: inline-block;
+    font-size: .8em;
+  }
+  footer {
+    padding: 200px 20px 0 100px;
+  }
+  footer .logo img {
+    width: auto;
+  }
+  footer .line {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+    justify-items: center;
+  }
+  footer .line .contact img {
+    margin-right: 10px;
+  }
+  footer .line .updates {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5em;
+  }
+  footer .line .updates a {
+    margin: 0;
+  }
+  footer .line .updates a:nth-of-type(5) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  footer .line .updates a:nth-of-type(6) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  footer .line .updates a:nth-of-type(7) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  footer .line .social {
+    margin: 0;
+  }
+  footer .profile {
+    font-size: 1em;
+    margin: 50px 0 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

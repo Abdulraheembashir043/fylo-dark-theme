@@ -14,6 +14,8 @@ body {
 // ########## Mobile view ##########
 .wrapper {
   padding: 40px 20px 350px;
+  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom;
+  background-size: 20000px 4200px;
 
   h2, h3 {
     font-family: 'Raleway', sans-serif;
@@ -61,8 +63,6 @@ body {
     header {
       text-align: center;
       margin-bottom: 150px;
-      background: url(../images/bg-curvy-mobile.svg) no-repeat bottom;
-      background-size: 500px 350px;
 
       img {
         width: 80%;
@@ -98,6 +98,14 @@ body {
 
       img {
         width: 50px;
+      }
+
+      .two {
+
+        img {
+          width: 35px;
+        }
+
       }
 
       h3 {
@@ -157,6 +165,8 @@ body {
 
     .testimony {
       margin: 0 20px;
+      padding-top: 40px;
+      background: url(../images/bg-quotes.png) no-repeat;
 
       .testimonial {
         background: hsl(219, 30%, 18%);
@@ -220,7 +230,7 @@ body {
       }
 
       input {
-        color: rgb(165, 156, 156);
+        color: rgb(146, 139, 139);
       }
 
       button {
@@ -307,32 +317,220 @@ footer {
   }
 
   .profile {
-    font-size: .8em;
+    font-size: .75em;
     margin-bottom: 20px;
     text-align: center;
 
-      #fspan {
-        padding-right: 10px;
-        border-right: 1px solid hsl(176, 68%, 64%);
+    #fspan {
+      padding-right: 10px;
+      border-right: 2px solid hsl(176, 68%, 64%);
+    }
+
+    #sspan {
+      padding-left: 10px;
+      border-left: 2px solid white;
+    }
+
+    a {
+      color: hsl(176, 68%, 64%);
+      text-decoration: underline;
+      text-decoration-color: white;
+
+      &:hover {
+          text-decoration: none;
       }
 
-      #sspan {
-        padding-left: 10px;
-        border-left: 1px solid white;
-      }
-
-      a {
-        color: hsl(176, 68%, 64%);
-        text-decoration: underline;
-        text-decoration-color: white;
-
-        &:hover {
-            text-decoration: none;
-        }
-
-      }
+    }
 
   }
 
 } // End of footer
 
+// ########## Desktop view ##########
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 50px 100px 350px;
+    background: url(../images/bg-curvy-desktop.svg) no-repeat bottom center;
+    background-size: 10000px 2900px;
+
+    p {
+      font-size: 1em;
+    }
+
+    nav {
+
+      img {
+        width: auto;
+      }
+
+      ul {
+        font-size: 1.3em;
+
+        li {
+  
+          &:nth-of-type(2) {
+            margin: 0 20px;
+          }
+
+        }
+
+      }
+
+    } // End of nav
+
+    main {
+
+      header {
+        width: 50%;
+        margin: 0 auto 150px;
+
+        img {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 2em;
+        }
+
+      }
+
+      .files {
+        width: 75%;
+        margin: 0 auto 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5em;
+        box-sizing: border-box;
+      }
+
+      .productivity {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .write-up {
+          align-self: center;
+          width: 500px;
+
+          h3 {
+            font-size: 1.8em;
+          }
+
+        }
+
+      }
+
+      .testimony {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+
+        .testimonial {
+  
+          &:nth-of-type(2) {
+            margin: 0;
+          }
+
+          p {
+            font-size: 1em;
+          }
+
+        }
+
+      }
+
+      .sign-up {
+        width: 70%;
+        bottom: -450px;
+        left: 13%;
+
+        h3 {
+          font-size: 1.5em;
+        }
+
+        p {
+          margin: 20px 40px;
+        }
+       
+        input {
+          width: 50%;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        button {
+          width: 22%;
+          display: inline-block;
+          font-size: .8em;
+        }
+
+      }
+
+    } // End of main
+
+  } // End of wrapper
+
+  footer {
+    padding: 200px 20px 0 100px;
+
+    .logo {
+
+      img {
+        width: auto;
+      }
+    }
+
+    .line {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      grid-gap: 3em;
+      justify-items: center;
+
+      .contact {
+
+        img {
+          margin-right: 10px;
+        }
+
+      }
+
+      .updates {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5em;
+
+        a {
+          margin: 0;
+
+          &:nth-of-type(5) {
+            grid-column: 2;
+            grid-row: 1;
+          }
+
+          &:nth-of-type(6) {
+            grid-column: 2;
+            grid-row: 2;
+          }
+
+          &:nth-of-type(7) {
+            grid-column: 2;
+            grid-row: 3;
+          }
+
+        }
+
+      }
+
+      .social {
+        margin: 0;
+      }
+
+    }
+
+    .profile {
+      font-size: 1em;
+      margin: 50px 0 5px;
+    }
+    
+  } // End of footer
+
+} // End of Media Query
